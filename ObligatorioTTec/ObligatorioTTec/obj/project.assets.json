@@ -32924,11 +32924,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
+      "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
       "projectName": "ObligatorioTTec",
-      "projectPath": "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
+      "projectPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
       "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\obj\\",
+      "outputPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
