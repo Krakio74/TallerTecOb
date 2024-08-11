@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {}
+    "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {
+    "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
+        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
         "projectName": "ObligatorioTTec",
-        "projectPath": "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
+        "projectPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
         "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\source\\repos\\ObligatorioTTec\\ObligatorioTTec\\obj\\",
+        "outputPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -83,6 +83,18 @@
               "target": "Package",
               "version": "[8.0.7, )",
               "autoReferenced": true
+            },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "SQLitePCLRaw.provider.e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -126,6 +138,18 @@
               "target": "Package",
               "version": "[8.0.7, )",
               "autoReferenced": true
+            },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "SQLitePCLRaw.provider.e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -169,6 +193,18 @@
               "target": "Package",
               "version": "[8.0.7, )",
               "autoReferenced": true
+            },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "SQLitePCLRaw.provider.e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -207,6 +243,18 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.61, )"
+            },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "SQLitePCLRaw.provider.e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [

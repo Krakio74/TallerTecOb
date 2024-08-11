@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.Views.Register"
+             Title="Register">
+    <VerticalStackLayout>
+        <Label 
+            Text="Registro de usuario"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry 
+            Placeholder="Nombre"
+            x:Name="NombreUs"
+            Style="{StaticResource IngresoDefault}"
+            />
+        <Entry 
+            Placeholder="Apellido"
+            x:Name="ApellidoUs"
+            Style="{StaticResource IngresoDefault}"
+            />
+        <Entry 
+            Placeholder="Edad"
+            x:Name="EdadUs"
+            Style="{StaticResource IngresoDefault}"
+            />
+        <Entry 
+            Placeholder="Correo Electronico"
+            x:Name="CorreoUs"
+            Style="{StaticResource IngresoDefault}"
+            />
+        <Entry 
+            Placeholder="Contrasena"
+            x:Name="PasswordUs"
+            Style="{StaticResource IngresoDefault}"
+            />
+        <Button
+            Text="Registrarse"
+            HorizontalOptions="Center"
+            Clicked="Confirm_Register"
+            Style="{StaticResource BotonDefault}"/>
+    </VerticalStackLayout>
+</ContentPage>
