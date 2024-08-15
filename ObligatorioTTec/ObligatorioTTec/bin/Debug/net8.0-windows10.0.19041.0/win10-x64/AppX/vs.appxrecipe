@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-11T23:42:22.741</Modified>
+      <Modified>2024-08-12T01:11:23.394</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-11T22:00:27.738</Modified>
+      <Modified>2024-08-12T01:09:17.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ObligatorioTTec.runtimeconfig.json">
       <PackagePath>ObligatorioTTec.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ObligatorioTTec.dll">
       <PackagePath>ObligatorioTTec.dll</PackagePath>
-      <Modified>2024-08-11T23:42:22.478</Modified>
+      <Modified>2024-08-12T01:11:22.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ObligatorioTTec.exe</PackagePath>
-      <Modified>2024-08-11T23:42:22.482</Modified>
+      <Modified>2024-08-12T01:11:22.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ObligatorioTTec.deps.json">
       <PackagePath>ObligatorioTTec.deps.json</PackagePath>
-      <Modified>2024-08-11T22:00:27.174</Modified>
+      <Modified>2024-08-12T01:09:17.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

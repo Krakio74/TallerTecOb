@@ -3,39 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\userpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\userpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\obligatoriottec.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\obligatoriottec.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ObligatorioTTec\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\agust\\AppData\\Local\\Temp\\.vsdbgsrc\\78d9d719ef492a0d0d13c4265b3a370dab27a2e2\\MainPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\models\\dbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\models\\dbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\models\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\models\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\models\\dbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\models\\dbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\views\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,24 +59,12 @@
       "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\obligatoriottec.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\obligatoriottec.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,33 +82,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.g.i.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "RelativeDocumentMoniker": "ObligatorioTTec\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "RelativeToolTip": "ObligatorioTTec\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAWwEoAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T23:40:49.262Z",
+              "DocumentIndex": 1,
+              "Title": "UserPanel.xaml",
+              "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\UserPanel.xaml",
+              "RelativeDocumentMoniker": "ObligatorioTTec\\UserPanel.xaml",
+              "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\UserPanel.xaml",
+              "RelativeToolTip": "ObligatorioTTec\\UserPanel.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T22:43:06.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainPage.xaml.sg.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\AppData\\Local\\Temp\\.vsdbgsrc\\78d9d719ef492a0d0d13c4265b3a370dab27a2e2\\MainPage.xaml.sg.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\78d9d719ef492a0d0d13c4265b3a370dab27a2e2\\MainPage.xaml.sg.cs",
-              "ToolTip": "C:\\Users\\agust\\AppData\\Local\\Temp\\.vsdbgsrc\\78d9d719ef492a0d0d13c4265b3a370dab27a2e2\\MainPage.xaml.sg.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\78d9d719ef492a0d0d13c4265b3a370dab27a2e2\\MainPage.xaml.sg.cs [Read Only]",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAAB0AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T23:40:03.927Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Styles.xaml",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Resources\\Styles\\Styles.xaml",
               "RelativeDocumentMoniker": "ObligatorioTTec\\Resources\\Styles\\Styles.xaml",
@@ -119,8 +103,7 @@
               "RelativeToolTip": "ObligatorioTTec\\Resources\\Styles\\Styles.xaml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAKYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-11T23:37:30.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-11T23:37:30.073Z"
             },
             {
               "$type": "Document",
@@ -130,27 +113,27 @@
               "RelativeDocumentMoniker": "ObligatorioTTec\\Models\\Utilidades.cs",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Models\\Utilidades.cs",
               "RelativeToolTip": "ObligatorioTTec\\Models\\Utilidades.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-11T22:55:27.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "ObligatorioTTec\\AppShell.xaml.cs",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\AppShell.xaml.cs",
               "RelativeToolTip": "ObligatorioTTec\\AppShell.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-11T20:54:26.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\App.xaml.cs",
               "RelativeDocumentMoniker": "ObligatorioTTec\\App.xaml.cs",
@@ -158,8 +141,7 @@
               "RelativeToolTip": "ObligatorioTTec\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T23:08:14.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T23:08:14.317Z"
             },
             {
               "$type": "Document",
@@ -171,12 +153,11 @@
               "RelativeToolTip": "ObligatorioTTec\\App.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-08T23:08:11.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T23:08:11.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "DBL.cs",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Models\\DBL.cs",
               "RelativeDocumentMoniker": "ObligatorioTTec\\Models\\DBL.cs",
@@ -184,12 +165,11 @@
               "RelativeToolTip": "ObligatorioTTec\\Models\\DBL.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAlwDgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T23:06:48.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T23:06:48.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "ObligatorioTTec.csproj",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
               "RelativeDocumentMoniker": "ObligatorioTTec\\ObligatorioTTec.csproj",
@@ -202,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "ObligatorioTTec\\Models\\Usuario.cs",
@@ -210,8 +190,7 @@
               "RelativeToolTip": "ObligatorioTTec\\Models\\Usuario.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAuwBkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T23:03:04.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T23:03:04.062Z"
             },
             {
               "$type": "Document",
@@ -221,14 +200,14 @@
               "RelativeDocumentMoniker": "ObligatorioTTec\\Views\\Register.xaml.cs",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Views\\Register.xaml.cs",
               "RelativeToolTip": "ObligatorioTTec\\Views\\Register.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAewBsAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T23:02:11.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Register.xaml",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Views\\Register.xaml",
               "RelativeDocumentMoniker": "ObligatorioTTec\\Views\\Register.xaml",
@@ -241,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Login.xaml.cs",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Views\\Login.xaml.cs",
               "RelativeDocumentMoniker": "ObligatorioTTec\\Views\\Login.xaml.cs",
@@ -249,12 +228,11 @@
               "RelativeToolTip": "ObligatorioTTec\\Views\\Login.xaml.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAlwB0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T22:52:35.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T22:52:35.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "ObligatorioTTec\\MainPage.xaml.cs",
@@ -267,33 +245,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\MainPage.xaml",
               "RelativeDocumentMoniker": "ObligatorioTTec\\MainPage.xaml",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\MainPage.xaml",
               "RelativeToolTip": "ObligatorioTTec\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-08T22:49:22.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\AppShell.xaml",
               "RelativeDocumentMoniker": "ObligatorioTTec\\AppShell.xaml",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\AppShell.xaml",
               "RelativeToolTip": "ObligatorioTTec\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-08T22:49:14.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Login.xaml",
               "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Views\\Login.xaml",
               "RelativeDocumentMoniker": "ObligatorioTTec\\Views\\Login.xaml",
@@ -301,8 +279,7 @@
               "RelativeToolTip": "ObligatorioTTec\\Views\\Login.xaml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-08T22:47:09.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T22:47:09.876Z"
             }
           ]
         }

@@ -6,6 +6,9 @@
         {
             InitializeComponent();
         }
-
+        public async void PerfilUsuario(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserPanel());
+        }
     }
 }

@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Resources.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/UserPanel.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.UserPanel.xaml
+build_metadata.AdditionalFiles.TargetPath = UserPanel.xaml
+build_metadata.AdditionalFiles.RelativePath = UserPanel.xaml
+
 [C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Views/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Views.Login.xaml

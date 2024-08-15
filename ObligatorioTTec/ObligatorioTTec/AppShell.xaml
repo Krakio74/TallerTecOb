@@ -11,5 +11,16 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <Shell.TitleView>
+        <Grid ColumnDefinitions="auto,*,auto">
+            <Label Text="Obligatorio" BackgroundColor="Red"></Label>
+            <HorizontalStackLayout Grid.Column="2">
+                <ImageButton
+                    Clicked="PerfilUsuario"
+                    Source="Images/userIcon.png"/>
+                <!--<Label Text="Icon" BackgroundColor="Red"></Label>-->
+            </HorizontalStackLayout>
+        </Grid>
+    </Shell.TitleView>
 
 </Shell>
