@@ -8,35 +8,59 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ObligatorioTTec
-build_property.ProjectDir = C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\
+build_property.ProjectDir = C:\Users\Usario\source\repos\TallerTecOb\ObligatorioTTec\ObligatorioTTec\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/App.xaml]
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/AppShell.xaml]
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/MainPage.xaml]
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Catalogo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Catalogo.xaml
+build_metadata.AdditionalFiles.TargetPath = Catalogo.xaml
+build_metadata.AdditionalFiles.RelativePath = Catalogo.xaml
+
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Login.xaml
+
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Colors.xaml]
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/PerfilCliente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.PerfilCliente.xaml
+build_metadata.AdditionalFiles.TargetPath = PerfilCliente.xaml
+build_metadata.AdditionalFiles.RelativePath = PerfilCliente.xaml
+
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/RegistrarCliente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.RegistrarCliente.xaml
+build_metadata.AdditionalFiles.TargetPath = RegistrarCliente.xaml
+build_metadata.AdditionalFiles.RelativePath = RegistrarCliente.xaml
+
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Styles.xaml]
+[C:/Users/Usario/source/repos/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

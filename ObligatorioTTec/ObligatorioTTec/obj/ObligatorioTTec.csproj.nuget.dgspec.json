@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {}
+    "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {
+    "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
+        "projectUniqueName": "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
         "projectName": "ObligatorioTTec",
-        "projectPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
-        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\",
+        "projectPath": "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
+        "packagesPath": "C:\\Users\\Usario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

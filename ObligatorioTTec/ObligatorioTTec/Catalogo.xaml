@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.Catalogo"
+             Title="Catalogo">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="NombreEntry"
+            Text="{Binding nombre}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="ApellidoEntry"
+            Text="{Binding apellido}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="BtnVolver"
+            Text="Volver"
+            FontSize="Medium"
+            Clicked="BtnVolver_Clicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="LightBlue" />
+    </VerticalStackLayout>
+</ContentPage>

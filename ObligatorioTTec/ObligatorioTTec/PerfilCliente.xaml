@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.PerfilCliente"
+             Title="PerfilCliente">
+    <VerticalStackLayout Padding="20">
+        <!-- Imagen de perfil -->
+        <Image
+            x:Name="ProfileImage"
+            HeightRequest="150"
+            Aspect="AspectFill"
+            HorizontalOptions="Center" />
+
+        <!-- Nombre de usuario -->
+        <Label
+            x:Name="UsernameLabel"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            Margin="0,10" />
+
+        <!-- Contraseña (generalmente no se muestra en texto plano, pero aquí se muestra para el ejemplo) -->
+        <Label
+            x:Name="PasswordLabel"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            Margin="0,10" />
+
+        <!-- Muestra resto de datos -->
+
+        <Label
+             x:Name="NombreLabel"
+             FontSize="Medium"
+             HorizontalOptions="Center"
+             Margin="0,10" />
+
+        <Label
+              x:Name="SexoLabel"
+              FontSize="Medium"
+              HorizontalOptions="Center"
+              Margin="0,10" />
+
+        <Label
+              x:Name="ApellidoLabel"
+              FontSize="Medium"
+              HorizontalOptions="Center"
+              Margin="0,10" />
+
+        <Label
+              x:Name="CorreoLabel"
+              FontSize="Medium"
+              HorizontalOptions="Center"
+              Margin="0,10" />
+
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Fill">
+            <Button
+                    x:Name="BtnEditar"
+                    Text="Editar"
+                    FontSize="Medium"
+                    Clicked="BtnEditar_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="DarkRed" />
+            <Button
+                    x:Name="BtnVolver"
+                    Text="Volver"
+                    FontSize="Medium"
+                    Clicked="BtnVolver_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="LightBlue" />
+        </HorizontalStackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>

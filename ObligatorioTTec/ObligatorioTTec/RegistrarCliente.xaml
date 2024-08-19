@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.RegistrarCliente"
+             Title="Registrar Cliente">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Título -->
+            <Label 
+                Text="Crear Perfil"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <!-- Foto de perfil -->
+            <Image 
+                x:Name="ProfileImage"
+                Source="placeholder_image.png"
+                HeightRequest="150"
+                WidthRequest="150"
+                Aspect="AspectFill"
+                HorizontalOptions="Center" />
+            <Button 
+                Text="Tomar Foto"
+                Clicked="OnTakePhotoClicked"
+                HorizontalOptions="Center" />
+
+            <!-- Nombre -->
+            <Entry 
+                x:Name="NombreEntry"
+                Placeholder="Nombre"
+                Keyboard="Text"
+                IsEnabled="False" />
+
+            <!-- Apellido -->
+            <Entry 
+                x:Name="ApellidoEntry"
+                Placeholder="Apellido"
+                Keyboard="Text"
+                IsEnabled="False" />
+
+            <!-- Sexo -->
+            <Picker
+                x:Name="SexoPicker"
+                Title="Sexo"
+                IsEnabled="False">
+                <Picker.Items>
+                    <x:String>Masculino</x:String>
+                    <x:String>Femenino</x:String>
+                    <x:String>Pansexual</x:String>
+                    <x:String>Transexual</x:String>
+                    <x:String>Trisexual</x:String>
+                    <x:String>Helicoptero Apache</x:String>
+                    <x:String>Lancha a motor</x:String>
+                    <x:String>Transformer</x:String>
+                    <x:String>Otro</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Correo electrónico -->
+            <Entry 
+                x:Name="CorreoEntry"
+                Placeholder="Correo Electrónico"
+                Keyboard="Email"
+                IsEnabled="False" />
+
+            <!-- Usuario -->
+            <Entry 
+                x:Name="UsuarioEntry"
+                Placeholder="Usuario"
+                Keyboard="Text"
+                IsEnabled="False" />
+
+            <!-- Contraseña -->
+            <Entry 
+                x:Name="ContraseñaEntry"
+                Placeholder="Contraseña"
+                IsPassword="True"
+                IsEnabled="False" />
+
+            <!-- Contenedor horizontal para los botones -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Fill">
+                <Button
+                    x:Name="BtnEditar"
+                    Text="Editar"
+                    FontSize="Medium"
+                    Clicked="BtnEditar_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="LightBlue" />
+                <Button
+                    x:Name="BtnVolver"
+                    Text="Volver"
+                    FontSize="Medium"
+                    Clicked="BtnVolver_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="LightBlue" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\",
+  "WorkspaceRootPath": "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\agust\\onedrive\\documents\\github\\tallertecob\\obligatoriottec\\obligatoriottec\\obligatoriottec.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\obligatoriottec.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|c:\\users\\usario\\source\\repos\\tallertecob\\obligatoriottec\\obligatoriottec\\perfilcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787882A8-655C-42CE-8F98-89EC43A10E68}|ObligatorioTTec\\ObligatorioTTec.csproj|solutionrelative:obligatoriottec\\perfilcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +14,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -23,13 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ObligatorioTTec",
-              "DocumentMoniker": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
-              "RelativeDocumentMoniker": "ObligatorioTTec\\ObligatorioTTec.csproj",
-              "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\ObligatorioTTec.csproj",
-              "RelativeToolTip": "ObligatorioTTec\\ObligatorioTTec.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-25T23:43:24.035Z",
+              "Title": "PerfilCliente.xaml",
+              "DocumentMoniker": "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\PerfilCliente.xaml",
+              "RelativeDocumentMoniker": "ObligatorioTTec\\PerfilCliente.xaml",
+              "ToolTip": "C:\\Users\\Usario\\source\\repos\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\PerfilCliente.xaml",
+              "RelativeToolTip": "ObligatorioTTec\\PerfilCliente.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T06:11:44.865Z",
               "EditorCaption": ""
             }
           ]
