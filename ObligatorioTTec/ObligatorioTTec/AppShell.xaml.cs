@@ -10,5 +10,6 @@
         {
             await Navigation.PushAsync(new UserPanel());
         }
+      
     }
 }

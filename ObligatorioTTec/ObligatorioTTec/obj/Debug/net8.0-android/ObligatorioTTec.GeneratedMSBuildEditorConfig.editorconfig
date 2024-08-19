@@ -12,53 +12,143 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ObligatorioTTec
-build_property.ProjectDir = C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\
+build_property.ProjectDir = C:\Users\Sheel\OneDrive\Desktop\Obligatorio Taller\ObligatorioTTec\ObligatorioTTec\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/App.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/AppShell.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/MainPage.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/ConfigurationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.ConfigurationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ConfigurationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ConfigurationPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/DetailsListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.DetailsListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DetailsListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DetailsListPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Colors.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/MovieByGenrePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MovieByGenrePage.xaml
+build_metadata.AdditionalFiles.TargetPath = MovieByGenrePage.xaml
+build_metadata.AdditionalFiles.RelativePath = MovieByGenrePage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/MovieDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MovieDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MovieDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MovieDetailsPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/MovieHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MovieHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = MovieHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = MovieHomePage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/MovieSearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MovieSearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MovieSearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MovieSearchPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/MoviesFavouritePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.MoviesFavouritePage.xaml
+build_metadata.AdditionalFiles.TargetPath = MoviesFavouritePage.xaml
+build_metadata.AdditionalFiles.RelativePath = MoviesFavouritePage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Styles.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/UserPanel.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SerieByGenrePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SerieByGenrePage.xaml
+build_metadata.AdditionalFiles.TargetPath = SerieByGenrePage.xaml
+build_metadata.AdditionalFiles.RelativePath = SerieByGenrePage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SerieDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SerieDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SerieDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SerieDetailsPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SerieEpisodeDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SerieEpisodeDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SerieEpisodeDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SerieEpisodeDetailsPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SerieHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SerieHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = SerieHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = SerieHomePage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SerieSearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SerieSearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SerieSearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SerieSearchPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SerieSeasonDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SerieSeasonDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SerieSeasonDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SerieSeasonDetailsPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/SeriesFavouritePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.SeriesFavouritePage.xaml
+build_metadata.AdditionalFiles.TargetPath = SeriesFavouritePage.xaml
+build_metadata.AdditionalFiles.RelativePath = SeriesFavouritePage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/UserPanel.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.UserPanel.xaml
 build_metadata.AdditionalFiles.TargetPath = UserPanel.xaml
 build_metadata.AdditionalFiles.RelativePath = UserPanel.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Views/Login.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/VideoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.VideoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = VideoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = VideoPage.xaml
+
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/Views/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Views.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Login.xaml
 
-[C:/Users/agust/OneDrive/Documents/GitHub/TallerTecOb/ObligatorioTTec/ObligatorioTTec/Views/Register.xaml]
+[C:/Users/Sheel/OneDrive/Desktop/Obligatorio Taller/ObligatorioTTec/ObligatorioTTec/Views/Register.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ObligatorioTTec.Views.Register.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Register.xaml

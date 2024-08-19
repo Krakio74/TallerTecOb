@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.MovieHomePage"
+             Title="Movies">
+    <ScrollView>
+        <VerticalStackLayout Padding="3">
+
+
+
+            <!--Action Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+        CornerRadius="50"
+        HasShadow="True"
+        Padding="3"
+        IsClippedToBounds="True"
+        AutomationId="28"
+                    HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+            Padding="3"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+                        <Image 
+                Source="action.png"
+                WidthRequest="42"
+                HeightRequest="42"
+                Margin="10,0,0,0"
+                VerticalOptions="Center"/>
+
+                        <Label 
+                FontSize="23"
+                FontAttributes="Bold"
+                Margin="10,0,20,0"
+                Text="Action"
+                VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="ActionMoviesCollectionView"
+        Grid.Row="1"
+        SelectionMode="Single"
+        SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                    HasShadow="False"
+                    Padding="0"
+                    Margin="5"
+                    WidthRequest="120"
+                    HeightRequest="180"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                            Aspect="AspectFill"
+                            Grid.RowSpan="2"
+                            Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                            CornerRadius="5"
+                            Padding="5"
+                            HasShadow="False"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            ZIndex="1"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Margin="3,3,3,0"
+                            Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                                FontSize="12"
+                                TextColor="White"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Adventure Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="12"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="adventure.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Adventure"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="AdventureMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Animation Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="16"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="animation.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Animation"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="AnimationMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Comedy Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="35"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="comedy.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Comedy"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="ComedyMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Crime Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="80"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="crime.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Crime"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="CrimeMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Documentary Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="99"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="documentary.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Documentary"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="DocumentaryMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+
+            <!--Drama Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="18"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="drama.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Drama"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="DramaMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+
+
+            <!--Family Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="10751"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="family.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Family"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="FamilyMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Fantasy Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="14"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="fantasy.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Fantasy"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="FantasyMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--History Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="36"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="history.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="History"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="HistoryMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Horror Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="27"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="horror.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Horror"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="HorrorMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Music Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="10402"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="music.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Music"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="MusicMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Mystery Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="9648"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="mystery.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Mystery"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="MysteryMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Romance Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="10749"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="romance.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Romance"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="RomanceMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--ScienceFiction Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="878"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="sciencefiction.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Science Fiction"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="ScienceFictionMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Tv Movie Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="10770"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="tvmovie.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Tv Movie"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="TvMovieMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Thriller Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="53"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="thriller.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Thriller"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="ThrillerMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--War Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="10752"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="war.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="War"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="WarMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <!--Western Section-->
+            <VerticalStackLayout Padding="10">
+                <Frame 
+       CornerRadius="50"
+       HasShadow="True"
+       Padding="3"
+       IsClippedToBounds="True"
+       AutomationId="37"
+                   HorizontalOptions="Start">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGenreTapped" />
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout 
+           Padding="3"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+
+                        <Image 
+               Source="western.png"
+               WidthRequest="42"
+               HeightRequest="42"
+               Margin="10,0,0,0"
+               VerticalOptions="Center"/>
+
+                        <Label 
+               FontSize="23"
+               FontAttributes="Bold"
+               Margin="10,0,20,0"
+               Text="Western"
+               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <CollectionView x:Name="WesternMoviesCollectionView"
+       Grid.Row="1"
+       SelectionMode="Single"
+       SelectionChanged="OnMovieSelected">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="6"
+                   HasShadow="False"
+                   Padding="0"
+                   Margin="5"
+                   WidthRequest="120"
+                   HeightRequest="180"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                                <Grid BackgroundColor="Transparent">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2">
+
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMovieTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                    <Frame BackgroundColor="Black"
+                           CornerRadius="5"
+                           Padding="5"
+                           HasShadow="False"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           ZIndex="1"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           Margin="3,3,3,0"
+                           Opacity="0.8">
+
+                                        <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                               FontSize="12"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                                    </Frame>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

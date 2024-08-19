@@ -1,1 +1,1 @@
-C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\ObligatorioTTec.csproj;x64
+C:\Users\Sheel\OneDrive\Desktop\Obligatorio Taller\ObligatorioTTec\ObligatorioTTec\ObligatorioTTec.csproj;x64
