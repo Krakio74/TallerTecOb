@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.SerieSeasonDetailsPage"
+              Title="{Binding Serie.Name}">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Grid>
+                <!-- Define las filas y columnas del Grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"/>
+                    <!-- Fija la altura del banner -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Para el título -->
+                    <RowDefinition Height="60"/>
+                    <!-- Para el runtime y la fecha de lanzamiento -->
+                    <!-- Agrega más RowDefinitions según sea necesario -->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Banner de fondo -->
+                <Image Source="{Binding Serie.FullBackdropPath}"
+                       Aspect="AspectFill"
+                       HorizontalOptions="FillAndExpand"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="2"/>
+
+                <!-- Imagen del poster, parcialmente sobre el banner -->
+                <Frame CornerRadius="10"
+                       Padding="0"
+                       HasShadow="False"
+                       WidthRequest="150"
+                       HeightRequest="200"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Margin="0,140,0,0">
+                    <Image Source="{Binding Season.FullPosterPath}"
+                           Aspect="AspectFill"
+                           HeightRequest="200"
+                           WidthRequest="150"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Frame>
+
+                <!-- Título de la película -->
+                <Label Text="{Binding FullName}"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       Margin="10"
+                       Grid.Row="1"
+                       Grid.Column="1"/>
+
+                <!-- Runtime y fecha de lanzamiento -->
+                <StackLayout Orientation="Horizontal"
+                             VerticalOptions="Start"
+                             HorizontalOptions="Start"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Margin="0"
+                             Padding="15,5">
+
+
+                </StackLayout>
+            </Grid>
+
+            <!-- Descripción -->
+            <Label Text="{Binding Season.Overview}" 
+       FontSize="Medium" 
+       Margin="0"
+       Padding="15,5"/>
+
+
+
+            <Label Text="Episodes" 
+FontSize="Large" 
+FontAttributes="Bold" 
+HorizontalOptions="Center" 
+Margin="0,20"/>
+
+            <Grid Padding="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+
+                <CollectionView x:Name="EpisodesCollectionView"
+         Grid.Row="1"
+         SelectionMode="Single"
+         SelectionChanged="OnEpisodeSelected">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BorderColor="Transparent"
+            CornerRadius="6"
+            HasShadow="False"
+            Padding="0"
+            Margin="5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding FullPosterPath}" 
+                    HeightRequest="150" 
+                    Aspect="AspectFill"
+                    Grid.RowSpan="2" 
+                    Grid.ColumnSpan="2">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnEpisodeTapped"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Frame BackgroundColor="Black"
+                 CornerRadius="5"
+                    Padding="5"
+                    HasShadow="False"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    ZIndex="1"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    Margin="3,3,3,0"
+                    Opacity="0.8">
+                                        <Label Text="{Binding EpisodeNumber, StringFormat='Episode {0}'}"
+                                        FontSize="12"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                                    </Frame>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.DetailsListPage"
+             Title="DetailsListPage">
+
+
+    <VerticalStackLayout Padding="3">
+
+        <Label x:Name="CategoryLabl"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="0,10,0,10"/>
+
+        <CollectionView x:Name="MoviesCollectionView"
+                        VerticalOptions="FillAndExpand"
+                        SelectionMode="Single"
+                        SelectionChanged="OnMovieSelected">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="{Binding FullPosterPath}" HeightRequest="150" Aspect="AspectFill"/>
+                        <StackLayout Grid.Column="1" Padding="10" VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding Title}" FontSize="14" HorizontalOptions="Start"/>
+                            <Label Text="{Binding Overview}" FontSize="12" HorizontalOptions="Start"/>
+                            <Label Text="{Binding ReleaseDate, StringFormat='Released: {0:yyyy-MM-dd}'}" FontSize="12" HorizontalOptions="Start"/>
+                            <Label Text="{Binding VoteAverage, StringFormat='Rating: {0}'}" FontSize="12" HorizontalOptions="Start"/>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

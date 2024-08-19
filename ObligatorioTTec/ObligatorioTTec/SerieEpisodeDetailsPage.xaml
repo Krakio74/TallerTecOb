@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.SerieEpisodeDetailsPage"
+              Title="{Binding Name}">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Grid>
+                <!-- Define las filas y columnas del Grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"/>
+                    <!-- Fija la altura del banner -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Para el título -->
+                    <RowDefinition Height="60"/>
+                    <!-- Para el runtime y la fecha de lanzamiento -->
+                    <!-- Agrega más RowDefinitions según sea necesario -->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Banner de fondo -->
+                <Image Source="{Binding FullPosterPath}"
+                       Aspect="AspectFill"
+                       HorizontalOptions="FillAndExpand"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="2"/>
+
+                <!-- Imagen del poster, parcialmente sobre el banner -->
+                <Frame CornerRadius="10"
+                       Padding="0"
+                       HasShadow="False"
+                       WidthRequest="150"
+                       HeightRequest="200"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Margin="0,140,0,0">
+                    <Image Source="{Binding FullPosterPath}"
+                           Aspect="AspectFill"
+                           HeightRequest="200"
+                           WidthRequest="150"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Frame>
+
+                <!-- Título de la película -->
+                <Label Text="{Binding Name}"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       Margin="10"
+                       Grid.Row="1"
+                       Grid.Column="1"/>
+
+                <!-- Runtime y fecha de lanzamiento -->
+                <StackLayout Orientation="Horizontal"
+                             VerticalOptions="Start"
+                             HorizontalOptions="Start"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Margin="0"
+                             Padding="15,5">
+                    
+                    <Frame HasShadow="False"
+CornerRadius="5"
+Padding="10,5"
+BorderColor="Black"
+VerticalOptions="Center"
+HorizontalOptions="Center">
+                        <Label Text="{Binding EpisodeNumber, StringFormat='Episode {0}'}"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"/>
+                    </Frame>
+
+                    <Frame HasShadow="False"
+                  CornerRadius="5"
+                  Padding="10,5"
+                  BorderColor="Black"
+                  VerticalOptions="Center"
+                  HorizontalOptions="Center"
+                  Margin="10,0,0,0">
+                        <Label Text="{Binding SeasonNumber, StringFormat='Season {0}'}"
+                      VerticalOptions="Center"
+                      HorizontalOptions="Center"/>
+                    </Frame>
+
+
+                </StackLayout>
+            </Grid>
+
+            <!-- Descripción -->
+            <Label Text="{Binding Overview}" 
+       FontSize="Medium" 
+       Margin="0"
+       Padding="15,5"/>
+
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

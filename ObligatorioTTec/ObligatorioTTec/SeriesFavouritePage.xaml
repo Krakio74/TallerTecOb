@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.SeriesFavouritePage"
+             Title="Favorites Series">
+
+    <Grid Padding="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <CollectionView x:Name="FavoriteSeriesCollectionView"
+                        Grid.Row="1"
+                        SelectionMode="Single"
+                        SelectionChanged="OnSerieSelected">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Transparent"
+                           CornerRadius="6"
+                           HasShadow="False"
+                           Padding="0"
+                           Margin="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <!-- Image Poster with TapGestureRecognizer -->
+                            <Image Source="{Binding FullPosterPath}" 
+                                   HeightRequest="150" 
+                                   Aspect="AspectFill"
+                                   Grid.RowSpan="2" 
+                                   Grid.ColumnSpan="2">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnSerieTapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <!-- año launch -->
+                            <Frame BackgroundColor="Black"
+                                CornerRadius="5"
+                                   Padding="5"
+                                   HasShadow="False"
+                                   Grid.Row="0"
+                                   Grid.Column="1"
+                                   ZIndex="1"
+                                   HorizontalOptions="End"
+                                   VerticalOptions="Start"
+                                   Margin="3,3,3,0"
+                                   Opacity="0.8">
+                                <Label Text="{Binding ReleaseDate, StringFormat='{0:yyyy}'}"
+                                       FontSize="12"
+                                       TextColor="White"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"/>
+                            </Frame>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.ConfigurationPage"
+             Title="Configuration">
+
+    <StackLayout Padding="10"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand"
+                 Spacing="10">
+        <Label Text="Lenguage"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+        <ListView x:Name="LanguageListView"
+                  ItemSelected="OnLanguageSelected"
+                  HasUnevenRows="True"
+                  SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal"
+                                     Padding="10"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center">
+                            <Image Source="{Binding FlagImage}"
+                                   WidthRequest="30"
+                                   HeightRequest="20"
+                                   Aspect="AspectFit" />
+                            <Label Text="{Binding LanguageName}"
+                                   VerticalOptions="Center"
+                                   Margin="10,0"
+                                   FontSize="18" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <Label Text="Theme"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="0,20,0,0" />
+
+        <CollectionView x:Name="ThemeCollectionView"
+                        ItemsLayout="HorizontalGrid"
+                        SelectionMode="Single"
+                        SelectionChanged="OnThemeSelected"
+                        >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Gray"
+                           CornerRadius="10"
+                           HasShadow="True"
+                           Padding="10"
+                           Margin="5">
+                        <StackLayout>
+
+                            <Image Source="{Binding ThemeImage}" 
+        WidthRequest="100"
+ HeightRequest="100"
+       Aspect="AspectFill"
+>
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnThemeTapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Label Text="{Binding ThemeName}"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   FontSize="18"
+                                   Margin="0,10,0,0" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

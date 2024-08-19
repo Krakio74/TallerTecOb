@@ -9,11 +9,9 @@
                 x:Name="CounterBtn"
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="GoToLogin"
+           
                 HorizontalOptions="Fill" />
-        <WebView x:Name="webView"
-             HorizontalOptions="FillAndExpand"
-             VerticalOptions="FillAndExpand" />
+ 
         </StackLayout>
 
 </ContentPage>
