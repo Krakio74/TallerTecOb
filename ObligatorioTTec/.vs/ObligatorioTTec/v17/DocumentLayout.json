@@ -99,8 +99,7 @@
               "ViewState": "AQIAAA4AAAAAAAAAAAAWwB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T23:02:11.094Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -126,7 +125,7 @@
               "RelativeDocumentMoniker": "ObligatorioTTec\\Models\\ApiServices.cs",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Models\\ApiServices.cs",
               "RelativeToolTip": "ObligatorioTTec\\Models\\ApiServices.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAwwC0AAAAIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwDgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-15T23:36:08.014Z",
               "EditorCaption": ""
@@ -271,7 +270,7 @@
               "RelativeDocumentMoniker": "ObligatorioTTec\\Views\\Login.xaml.cs",
               "ToolTip": "C:\\Users\\agust\\OneDrive\\Documents\\GitHub\\TallerTecOb\\ObligatorioTTec\\ObligatorioTTec\\Views\\Login.xaml.cs",
               "RelativeToolTip": "ObligatorioTTec\\Views\\Login.xaml.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAUwGwAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T22:52:35.586Z",
               "EditorCaption": ""

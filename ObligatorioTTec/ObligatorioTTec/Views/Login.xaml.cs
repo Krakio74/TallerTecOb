@@ -112,6 +112,11 @@ public partial class Login : ContentPage
         string password = PasswordUs.Text;
         var resp = _apiService.VerifyLogin(email, password);
         if (resp.Result == true) {
+            if(DeviceInfo.Current.Platform == DevicePlatform.Android || DeviceInfo.Current.Platform == DevicePlatform.iOS)
+            {
+                //CrossFingerprint.SetCurrentActivityResolver(() => this);
+            }
+            
             await App.CineDB.SetUsuario(CurrentUser.usuario);
         }
     }

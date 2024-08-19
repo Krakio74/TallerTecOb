@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObligatorioTTec")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ab035d5511a158b0c4707992cfdec326f36de51c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+51347650cf6ffeff1332039d809a028056a3b88c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObligatorioTTec")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObligatorioTTec")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
