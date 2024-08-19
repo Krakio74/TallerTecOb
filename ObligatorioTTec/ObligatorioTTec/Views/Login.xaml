@@ -26,7 +26,7 @@
             <Button 
                 Text="Enviar"
                 HorizontalOptions="Center"
-                Clicked="Confirm_Login"
+                Clicked="Button_Clicked"
                 Style="{StaticResource BotonDefault}"
             ></Button>
             

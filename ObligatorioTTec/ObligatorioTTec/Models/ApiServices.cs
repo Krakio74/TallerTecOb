@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ObligatorioTTec.Models;
 using System.ComponentModel;
+using Plugin.Maui.Biometric;
 
 
 namespace ObligatorioTTec.Models
@@ -54,46 +55,44 @@ namespace ObligatorioTTec.Models
             };
             var json = JsonConvert.SerializeObject(data);
             var contenido = new StringContent(json, Encoding.UTF8, "application/json");
+
             try
             {
-                Console.WriteLine("Sending request to API...");
-                var response = await _httpClient.PostAsync("Usuarios/VerifyLogin", contenido);
-                Console.WriteLine("Request sent.");
-            }
-            catch (HttpRequestException ex)
-            {
-                Console.WriteLine($"HttpRequestException: {ex.Message}");
-            }
-            catch (TaskCanceledException ex)
-            {
-                // This might indicate a timeout
-                Console.WriteLine($"TaskCanceledException (possibly a timeout): {ex.Message}");
+                var respone = await _httpClient.PostAsync("Usuarios/VerifyLogin", contenido);
+                if (respone.IsSuccessStatusCode)
+                {
+                    if (DeviceInfo.Current.Platform == DevicePlatform.Android || DeviceInfo.Current.Platform == DevicePlatform.iOS)
+                    {
+                        var result = await BiometricAuthenticationService.Default.AuthenticateAsync(new AuthenticationRequest()
+                        {
+                            Title = "Por favor autentifique",
+                            NegativeText = "Cancelar"
+                        }, CancellationToken.None);
+                        if (result.Status == BiometricResponseStatus.Success)
+                        {
+                            var jsonResponse = await respone.Content.ReadAsStringAsync();
+                            var usuario = JsonConvert.DeserializeObject<Usuario>(jsonResponse);
+                            CurrentUser.usuario = usuario;
+                            return true;
+                        }
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+
+                }
             }
             catch (Exception ex)
             {
-                // Catch any other exceptions
+                // Log any exceptions that occur
                 Console.WriteLine($"Exception: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
             }
 
-            //try
-            //{
-            //    var respone = await _httpClient.PostAsync("Usuarios/VerifyLogin", contenido);
-            //    if (respone.IsSuccessStatusCode)
-            //    {
-            //        var jsonResponse = await respone.Content.ReadAsStringAsync();
-            //        var usuario = JsonConvert.DeserializeObject<Usuario>(jsonResponse);
-            //        //CurrentUser.usuario = usuario;
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    // Log any exceptions that occur
-            //    Console.WriteLine($"Exception: {ex.Message}");
-            //    Console.WriteLine($"StackTrace: {ex.StackTrace}");
-            //}
-            
-            
-            return false ;
+
+            return false;
         }
     }
     

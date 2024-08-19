@@ -161,3 +161,8 @@ Microsoft.Maui.Essentials.aar
 SQLitePCLRaw.lib.e_sqlite3.android.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 Xamarin.Google.ErrorProne.Annotations.aar
+Plugin.Fingerprint.dll
+Xamarin.AndroidX.Biometric.dll
+androidx.biometric.biometric.aar
+Plugin.Maui.Biometric.dll
+Xamarin.AndroidX.Collection.Jvm.dll

@@ -178,6 +178,14 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[2.1.5, )"
+            },
+            "Plugin.Maui.Biometric": {
+              "target": "Package",
+              "version": "[0.0.2, )"
+            },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
               "version": "[2.1.9, )"
@@ -236,6 +244,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[2.1.5, )"
+            },
+            "Plugin.Maui.Biometric": {
+              "target": "Package",
+              "version": "[0.0.2, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -296,6 +312,14 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[2.1.5, )"
+            },
+            "Plugin.Maui.Biometric": {
+              "target": "Package",
+              "version": "[0.0.2, )"
+            },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
               "version": "[2.1.9, )"
@@ -349,6 +373,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Plugin.Fingerprint": {
+              "target": "Package",
+              "version": "[2.1.5, )"
+            },
+            "Plugin.Maui.Biometric": {
+              "target": "Package",
+              "version": "[0.0.2, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",

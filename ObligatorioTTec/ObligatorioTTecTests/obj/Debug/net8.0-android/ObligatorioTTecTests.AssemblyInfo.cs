@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObligatorioTTecTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab035d5511a158b0c4707992cfdec326f36de51c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+710eddb637d940b43f6d84d1861ba8069d076b72")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObligatorioTTecTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObligatorioTTecTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

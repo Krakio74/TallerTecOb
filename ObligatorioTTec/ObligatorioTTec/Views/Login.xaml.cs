@@ -1,14 +1,16 @@
 using ObligatorioTTec.Models;
+using System.Runtime.CompilerServices;
+using Plugin.Maui.Biometric;
 namespace ObligatorioTTec.Views;
 
 public partial class Login : ContentPage
 {
     private readonly ApiService _apiService;
     public Login()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         _apiService = new ApiService();
-	}
+    }
     protected override async void OnAppearing()
     {
         var LoggedUsers = await App.CineDB.GetUsuarios();
@@ -20,7 +22,7 @@ public partial class Login : ContentPage
         });
         if (LoggedUsers.Count > 0)
         {
-            
+
             foreach (var User in LoggedUsers)
             {
                 var userGrid = new Grid
@@ -35,7 +37,7 @@ public partial class Login : ContentPage
                     {
                         new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
                     },
-                    
+
                     //Padding = new Thickness(10),
                     //Margin = new Thickness(10),
 
@@ -45,25 +47,25 @@ public partial class Login : ContentPage
                     Text = "Nombre:",
                     FontAttributes = FontAttributes.Bold,
                     VerticalOptions = LayoutOptions.Center,
-                    
-                },0,0);
-               
+
+                }, 0, 0);
+
                 userGrid.Add(new Label
                 {
                     Text = User.Nombre,
                     VerticalOptions = LayoutOptions.Center
-                },1,0);
+                }, 1, 0);
                 userGrid.Add(new Label
                 {
                     Text = "Correo:",
                     FontAttributes = FontAttributes.Bold,
                     VerticalOptions = LayoutOptions.Center
-                },0,1);
+                }, 0, 1);
                 userGrid.Add(new Label
                 {
                     Text = User.Correo,
                     VerticalOptions = LayoutOptions.Center
-                },1,1);
+                }, 1, 1);
                 var frame = new Frame
                 {
                     Content = userGrid,
@@ -106,22 +108,41 @@ public partial class Login : ContentPage
         }
     }
 
-    private async void Confirm_Login(object sender, EventArgs e)
+    private void Confirm_Login(object sender, EventArgs e)
     {
         string email = CorreoUs.Text;
         string password = PasswordUs.Text;
+        _apiService.VerifyLogin(email, password);
         var resp = _apiService.VerifyLogin(email, password);
-        if (resp.Result == true) {
-            if(DeviceInfo.Current.Platform == DevicePlatform.Android || DeviceInfo.Current.Platform == DevicePlatform.iOS)
-            {
-                //CrossFingerprint.SetCurrentActivityResolver(() => this);
-            }
-            
-            await App.CineDB.SetUsuario(CurrentUser.usuario);
-        }
+        //    if (true == true)
+        //    {
+        //        if (DeviceInfo.Current.Platform == DevicePlatform.Android || DeviceInfo.Current.Platform == DevicePlatform.iOS)
+        //        {
+        //            //CrossFingerprint.SetCurrentActivityResolver(() => this);
+        //        }
+
+        //        await App.CineDB.SetUsuario(CurrentUser.usuario);
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        await DisplayAlert("Error", "Usuario o contraseña incorrectos", "OK");
+        //        return false;
+        //    }
     }
     private void Register(object sender, EventArgs e)
     {
         Navigation.PushAsync(new Register());
+    }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        string email = CorreoUs.Text;
+        string password = PasswordUs.Text;
+        var response = await _apiService.VerifyLogin(email, password);
+        if (response)
+        {
+
+        }
     }
 }

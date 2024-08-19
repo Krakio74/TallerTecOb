@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-19T17:44:48.857</Modified>
+      <Modified>2024-08-19T18:17:48.986</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ObligatorioTTec.dll">
       <PackagePath>ObligatorioTTec.dll</PackagePath>
-      <Modified>2024-08-19T17:44:47.946</Modified>
+      <Modified>2024-08-19T18:17:48.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ObligatorioTTec.exe</PackagePath>
-      <Modified>2024-08-19T17:44:47.990</Modified>
+      <Modified>2024-08-19T18:17:48.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
