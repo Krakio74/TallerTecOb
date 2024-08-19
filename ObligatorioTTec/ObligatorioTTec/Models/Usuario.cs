@@ -29,8 +29,8 @@ namespace ObligatorioTTec.Models
         [Column("Edad")]
         public int Edad { get; set; }
 
-        [Column("Password")]
-        public string Password { get; set; }
+        [Column("Pass")]
+        public string Pass { get; set; }
 
     }
 }

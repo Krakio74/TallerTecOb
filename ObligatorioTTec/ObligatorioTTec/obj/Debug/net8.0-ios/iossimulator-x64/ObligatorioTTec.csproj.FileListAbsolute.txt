@@ -318,3 +318,4 @@ C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\Obligatorio
 C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\obj\Debug\net8.0-ios\iossimulator-x64\ref\ObligatorioTTec.dll
 C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-ios\iossimulator-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
 C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-ios\iossimulator-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\agust\OneDrive\Documents\GitHub\TallerTecOb\ObligatorioTTec\ObligatorioTTec\bin\Debug\net8.0-ios\iossimulator-x64\Newtonsoft.Json.dll

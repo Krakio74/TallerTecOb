@@ -33,7 +33,7 @@ namespace ObligatorioTTec.Models
         public Task<Usuario> IniciarSession(string correo, string password)
         {
             Init();
-            var user = _database.Table<Usuario>().Where(u => u.Correo == correo && u.Password == password).FirstOrDefaultAsync();
+            var user = _database.Table<Usuario>().Where(u => u.Correo == correo && u.Pass == password).FirstOrDefaultAsync();
             return user;
         }
         public async Task<bool> UsuarioExiste(Usuario usuario)
