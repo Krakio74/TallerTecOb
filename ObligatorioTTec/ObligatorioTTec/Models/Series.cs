@@ -1,11 +1,31 @@
-﻿using Newtonsoft.Json.Converters;
+﻿
+/* Unmerged change from project 'ObligatorioTTec (net8.0-windows10.0.19041.0)'
+Before:
+using Newtonsoft.Json.Converters;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+After:
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-android)'
+Before:
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json;
+After:
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-maccatalyst)'
+Before:
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json;
+After:
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+*/
+using Newtonsoft.Json;
 
 namespace ObligatorioTTec.Models
 {
@@ -22,7 +42,7 @@ namespace ObligatorioTTec.Models
         public CreatedBy[]? CreatedBy { get; set; }
 
         [JsonProperty("episode_run_time")]
-        public int[]? EpisodeRunTime { get; set; } 
+        public int[]? EpisodeRunTime { get; set; }
 
         [JsonProperty("first_air_date")]
         public DateTimeOffset? FirstAirDate { get; set; }
@@ -197,7 +217,7 @@ namespace ObligatorioTTec.Models
 
         [JsonProperty("air_date")]
         public DateTimeOffset? AirDate { get; set; }
-        
+
         [JsonProperty("episodes")]
         public Episode[]? Episodes { get; set; }
 

@@ -41,7 +41,7 @@
                        Grid.Row="0"
                        Grid.Column="0"
                        Margin="0,140,0,0">
-                    <Image Source="{Binding Season.FullPosterPath}"
+                    <Image x:Name="PosterImage"
                            Aspect="AspectFill"
                            HeightRequest="200"
                            WidthRequest="150"
@@ -50,7 +50,7 @@
                 </Frame>
 
                 <!-- Título de la película -->
-                <Label Text="{Binding FullName}"
+                <Label Text="{Binding Serie.Name}"
                        FontSize="Large"
                        FontAttributes="Bold"
                        VerticalOptions="Start"
@@ -67,13 +67,25 @@
                              Grid.Column="1"
                              Margin="0"
                              Padding="15,5">
+                    <Frame HasShadow="False"
+ CornerRadius="5"
+ Padding="10,5"
+ BorderColor="Black"
+ VerticalOptions="Center"
+ HorizontalOptions="Center"
+ Margin="10,0,0,0">
+                        <Label x:Name="SeasonNumberLabel"
+     VerticalOptions="Center"
+     HorizontalOptions="Center"/>
+                    </Frame>
 
 
                 </StackLayout>
             </Grid>
 
             <!-- Descripción -->
-            <Label Text="{Binding Season.Overview}" 
+            <Label
+                x:Name="SeasonOverviewLabel"
        FontSize="Medium" 
        Margin="0"
        Padding="15,5"/>
@@ -148,16 +160,6 @@ Margin="0,20"/>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </Grid>
-
-
-
-
-
-
-
-
-
-
         </StackLayout>
     </ScrollView>
 </ContentPage>

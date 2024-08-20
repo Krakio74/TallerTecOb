@@ -1,6 +1,5 @@
 using Newtonsoft.Json;
 using ObligatorioTTec.Models;
-using ObligatorioTTec.Views;
 namespace ObligatorioTTec;
 public partial class MovieHomePage : ContentPage
 {

@@ -79,7 +79,7 @@ public partial class MovieDetailsPage : ContentPage
         {
             Movie pelicula = await _movieService.GetMovieDetails(id);
             BindingContext = pelicula;
-            UpdateButtonState(); 
+            UpdateButtonState();
         }
         catch (Exception ex)
         {
@@ -144,7 +144,7 @@ public partial class MovieDetailsPage : ContentPage
         try
         {
             var pelicula = (Movie)BindingContext;
-            var trailer = await _movieService.GetTrailer(pelicula.Id,"movie");
+            var trailer = await _movieService.GetTrailer(pelicula.Id, "movie");
 
             if (trailer != null)
             {

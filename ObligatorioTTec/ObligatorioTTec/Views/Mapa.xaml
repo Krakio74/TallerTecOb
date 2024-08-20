@@ -1,0 +1,111 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             x:Class="ObligatorioTTec.Views.Mapa">
+
+    <ContentPage.Content>
+        <Grid>
+            <!-- Mapa -->
+            <maps:Map x:Name="mapaUbicacion"
+                      IsShowingUser="True"
+                      VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand"
+                      MapType="Satellite"
+                      Grid.Row="1">
+
+                <maps:Map.ItemTemplate>
+                    <DataTemplate x:DataType="maps:Pin">
+                        <maps:Pin Location="{Binding Location}" 
+                                  Address="{Binding Address}"
+                                  Label="{Binding Label}" />
+                    </DataTemplate>
+                </maps:Map.ItemTemplate>
+
+            </maps:Map>
+
+            <StackLayout x:Name="BotonesStackLayoute"
+                         IsVisible="False"
+                         Orientation="Vertical"
+                         HorizontalOptions="Start"
+                         VerticalOptions="Start"
+                         Margin="10,0,0,40"
+                         Spacing="10"
+                         BackgroundColor="Transparent">
+                
+                <Button Clicked="ActualizarClima"
+                        Margin="-90,0,0,0"
+                        HeightRequest="60"
+                        CornerRadius="25"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        BackgroundColor="Transparent"
+                        Opacity="0.7" 
+                        ImageSource="sun.png"/>
+                
+                <Label x:Name="ClimaLabel"
+                       WidthRequest="150"/>
+            </StackLayout>
+            
+            <!-- Botones superpuestos sobre el mapa -->
+            <Button x:Name="BtnToggle"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Margin="10"
+                    Clicked="BtnToggle_Clicked"
+                    BackgroundColor="White"
+                    Opacity="0.7"
+                    ImageSource="left.png"
+                    Rotation="0" />
+
+            <StackLayout IsVisible="False"
+                         x:Name="BotonesStackLayout" 
+                         Orientation="Vertical"
+                         HorizontalOptions="Start"
+                         VerticalOptions="End"
+                         Margin="10,0,0,40"
+                         Spacing="10"
+                         BackgroundColor="Transparent">
+
+                <Button HeightRequest="60"
+                        CornerRadius="25"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="BtnGuardarPin_Clicked"
+                        BackgroundColor="Transparent"
+                        Opacity="0.7" 
+                        ImageSource="add.png"/>
+
+                <Button HeightRequest="60"
+                        CornerRadius="25"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="BtnVerSucursales_Clicked"
+                        BackgroundColor="Transparent"
+                        Opacity="0.7" 
+                        ImageSource="home.png"/>
+
+                <Button HeightRequest="60"
+                        CornerRadius="25"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="BtnBuscarSucursalCercana_Clicked"
+                        BackgroundColor="Transparent"
+                        Opacity="0.7" 
+                        ImageSource="ir.png"/>
+
+                <Button HeightRequest="60"
+                        CornerRadius="25"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="BtnCambiarTipoMapa_Clicked"
+                        BackgroundColor="Transparent"
+                        Opacity="0.7" 
+                        ImageSource="find.png"/>
+                
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

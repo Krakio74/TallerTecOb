@@ -1,9 +1,4 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace ObligatorioTTec.Models
@@ -11,14 +6,14 @@ namespace ObligatorioTTec.Models
     public class DBL
     {
         string path;
-        private  SQLiteAsyncConnection _database;
+        private SQLiteAsyncConnection _database;
         public DBL(string Path)
         {
             path = Path;
         }
         private void Init()
         {
-            if(_database == null)
+            if (_database == null)
             {
                 //var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CineDBL.db3");
                 _database = new(path);
@@ -33,7 +28,7 @@ namespace ObligatorioTTec.Models
         public Task<Usuario> IniciarSession(string correo, string password)
         {
             Init();
-            var user = _database.Table<Usuario>().Where(u => u.Correo == correo && u.Password == password).FirstOrDefaultAsync();
+            var user = _database.Table<Usuario>().Where(u => u.Correo == correo && u.Pass == password).FirstOrDefaultAsync();
             return user;
         }
         public async Task<bool> UsuarioExiste(Usuario usuario)
@@ -59,6 +54,31 @@ namespace ObligatorioTTec.Models
         public Task<int> BorrarUsuario(Usuario usuario)
         {
             return _database.DeleteAsync(usuario);
+        }
+        public async Task<bool> SetSucursal(Sucursal sucursal)
+        {
+            Init();
+
+            if (sucursal != null)
+            {
+                await _database.InsertAsync(sucursal);
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<List<Sucursal>> GetSucursales()
+        {
+            Init();
+
+            return await _database.Table<Sucursal>().ToListAsync();
+        }
+
+
+        public async Task<int> BorrarSucursal(Sucursal sucursal)
+        {
+            Init();
+            return await _database.DeleteAsync(sucursal);
         }
     }
 }

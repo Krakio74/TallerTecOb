@@ -1,13 +1,12 @@
 using Newtonsoft.Json;
 using ObligatorioTTec.Models;
-using ObligatorioTTec.Views;
 namespace ObligatorioTTec;
 
 public partial class SerieHomePage : ContentPage
 {
     private readonly MovieService _movieService;
     public SerieHomePage()
-	{
+    {
         InitializeComponent();
         _movieService = new MovieService();
         LoadSeries();
@@ -138,5 +137,5 @@ public partial class SerieHomePage : ContentPage
         }
     }
 
-  
+
 }

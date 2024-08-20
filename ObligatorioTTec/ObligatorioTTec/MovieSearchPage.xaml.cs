@@ -37,8 +37,8 @@ public partial class MovieSearchPage : ContentPage
 
             if (peopleResponse.Results.Any())
             {
-                var actorId = peopleResponse.Results.First().Id; 
-                var actorMoviesResponseContent = await _movieService.GetMoviesByActorId(actorId,"movie");
+                var actorId = peopleResponse.Results.First().Id;
+                var actorMoviesResponseContent = await _movieService.GetMoviesByActorId(actorId, "movie");
                 var actorMoviesResponse = JsonConvert.DeserializeObject<TmdbActorMoviesResponse>(actorMoviesResponseContent);
                 searchResults.AddRange(actorMoviesResponse.Cast);
             }

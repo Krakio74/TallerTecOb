@@ -6,7 +6,7 @@ public partial class DetailsListPage : ContentPage
 {
     private readonly MovieService _movieService;
 
-    public DetailsListPage(string type,string category)
+    public DetailsListPage(string type, string category)
     {
         InitializeComponent();
 
@@ -16,7 +16,7 @@ public partial class DetailsListPage : ContentPage
         {
             LoadMoviesList(type, category);
         }
-        else 
+        else
         {
             LoadSeriesList(type, category);
         }
@@ -24,11 +24,11 @@ public partial class DetailsListPage : ContentPage
 
     }
 
-    public async void LoadMoviesList(string type,string category)
+    public async void LoadMoviesList(string type, string category)
     {
         try
         {
-            var responseContent = await _movieService.GetList(type,category);
+            var responseContent = await _movieService.GetList(type, category);
             var movieResponse = JsonConvert.DeserializeObject<TmdbMoviesResponse>(responseContent);
             MoviesCollectionView.ItemsSource = movieResponse.Results;
         }

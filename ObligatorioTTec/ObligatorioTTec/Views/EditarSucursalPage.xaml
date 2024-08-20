@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.Views.EditarSucursalPage"
+             Title="Editar Sucursal">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Entry x:Name="NombreEntry" Placeholder="Nombre" />
+            <Entry x:Name="DireccionEntry" Placeholder="Dirección" />
+            <SearchBar x:Name="DireccionSearchBar"
+               Placeholder="Buscar dirección"
+               SearchCommand="{Binding BuscarDireccionCommand}"
+               SearchCommandParameter="{Binding Text, Source={x:Reference DireccionSearchBar}}" />
+            <ListView x:Name="DireccionesListView"
+              IsVisible="False"
+              ItemsSource="{Binding DireccionesSugeridas}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Direccion}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Entry x:Name="TelefonoEntry" Placeholder="Teléfono" />
+            <Button Text="Guardar" Clicked="OnSaveClicked" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

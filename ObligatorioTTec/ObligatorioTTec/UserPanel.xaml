@@ -5,8 +5,38 @@
              Title="UserPanel">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Inicie Session"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            Style="{StaticResource LableDefault}"/>
+
+        <Entry
+                x:Name="CorreoUs"
+                SemanticProperties.Hint="Correo electronico"
+                Style="{StaticResource IngresoDefault}"
+                Placeholder="Correo Electronico"/>
+        <Entry
+                x:Name="PasswordUs"
+                SemanticProperties.Hint="Contrasena"
+                Style="{StaticResource IngresoDefault}"
+                Placeholder="Contrasena"/>
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+
+            <Button 
+                Text="Enviar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                Style="{StaticResource BotonDefault}"
+            ></Button>
+
+            <Button
+                Text="Registrarse"
+                HorizontalOptions="Center"
+                Clicked="Register"
+                Style="{StaticResource BotonDefault}"/>
+        </HorizontalStackLayout>
+
+
     </VerticalStackLayout>
 </ContentPage>

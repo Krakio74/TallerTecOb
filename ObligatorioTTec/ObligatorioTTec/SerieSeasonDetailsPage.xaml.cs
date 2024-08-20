@@ -9,6 +9,8 @@ using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
 using ObligatorioTTec.Models;
 using System.Security.Cryptography;
+
+
 namespace ObligatorioTTec;
 
 public partial class SerieSeasonDetailsPage : ContentPage
@@ -16,9 +18,9 @@ public partial class SerieSeasonDetailsPage : ContentPage
     private readonly MovieService _movieService;
     private long _serie;
     private long _season;
-    public SerieSeasonDetailsPage(long serie,long season)
-	{
-		InitializeComponent();
+    public SerieSeasonDetailsPage(long serie, long season)
+    {
+        InitializeComponent();
         _movieService = new MovieService();
         _serie = serie;
         _season = season;
@@ -58,6 +60,9 @@ public partial class SerieSeasonDetailsPage : ContentPage
                 BindingContext = new SerieSeasonDetailsViewModel { Season = season };
             }
 
+            PosterImage.Source = season.FullPosterPath;
+            SeasonNumberLabel.Text = $"Season {season.SeasonNumber}";
+            SeasonOverviewLabel.Text = season.Overview;
             EpisodesCollectionView.ItemsSource = season.Episodes;
         }
         catch (Exception ex)

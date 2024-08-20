@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObligatorioTTec.Views.PinDetailsPage">
+    <StackLayout Padding="10">
+        <Entry x:Name="NombreEntry" Placeholder="Nombre"/>
+        <Entry x:Name="DireccionEntry" Placeholder="Dirección"/>
+        <Entry x:Name="TelefonoEntry" Placeholder="Teléfono"/>
+        <Picker x:Name="pickerCategoria" Title="Selecciona una Categoría">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Comida</x:String>
+                    <x:String>Ropa</x:String>
+                    <x:String>Tecnología</x:String>
+                    <x:String>Salud</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Guardar" Clicked="BtnGuardar_Clicked"/>
+    </StackLayout>
+</ContentPage>

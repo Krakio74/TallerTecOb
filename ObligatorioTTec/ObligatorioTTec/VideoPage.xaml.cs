@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using ObligatorioTTec.Models;
 namespace ObligatorioTTec;
 

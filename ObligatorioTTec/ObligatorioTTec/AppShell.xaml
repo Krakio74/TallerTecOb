@@ -4,7 +4,8 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ObligatorioTTec"
-    Title="ObligatorioTTec">
+    Title="ObligatorioTTec"
+    x:Name="shellCon">
 
 
 
@@ -33,9 +34,7 @@
    ContentTemplate="{DataTemplate local:SeriesFavouritePage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Locations">
-        <ShellContent Title="Locations" ContentTemplate="{DataTemplate local:MainPage}" />
-    </FlyoutItem>
+    
 
     <FlyoutItem Title="Profile">
         <ShellContent Title="Profile" ContentTemplate="{DataTemplate local:MainPage}" />
@@ -44,5 +43,15 @@
     <FlyoutItem Title="Configuration">
         <ShellContent Title="Configuration" ContentTemplate="{DataTemplate local:ConfigurationPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Usuario">
+        <ShellContent Title="UserPanel" ContentTemplate="{DataTemplate local:UserPanel}" />
+    </FlyoutItem>
 
 </Shell>
+<!--<FlyoutItem Title="Usuario">
+    <ShellContent Title="">
+        <ImageButton
+        Clicked="PerfilUsuario"
+        Source="Images/userIcon.png"/>
+    </ShellContent>
+</FlyoutItem>-->

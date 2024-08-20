@@ -50,7 +50,7 @@ public partial class MovieByGenrePage : ContentPage
     {
         try
         {
-            var responseContent = await _movieService.GetListByGenre(genreId,"movie");
+            var responseContent = await _movieService.GetListByGenre(genreId, "movie");
             var movieResponse = JsonConvert.DeserializeObject<TmdbMoviesResponse>(responseContent);
             MoviesCollectionView.ItemsSource = movieResponse.Results;
         }

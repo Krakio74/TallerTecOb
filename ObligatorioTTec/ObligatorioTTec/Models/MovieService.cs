@@ -1,15 +1,110 @@
-﻿using System;
+﻿
+/* Unmerged change from project 'ObligatorioTTec (net8.0-windows10.0.19041.0)'
+Before:
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
-using System.Text.Json;
+After:
+using Microsoft.Maui.Controls;
+using Newtonsoft.Json;
+using RestSharp;
+using System;
+using System;
+using System.Collections.Generic;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-android)'
+Before:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RestSharp;
+After:
+using Microsoft.Maui.Controls;
+using Newtonsoft.Json;
+using RestSharp;
+using System;
+using System;
+using System.Collections.Generic;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-maccatalyst)'
+Before:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RestSharp;
+After:
+using Microsoft.Maui.Controls;
+using Newtonsoft.Json;
+using RestSharp;
+using System;
+using System;
+using System.Collections.Generic;
+*/
+using Newtonsoft.Json;
+using RestSharp;
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-windows10.0.19041.0)'
+Before:
 using Microsoft.Maui.Controls;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+After:
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-android)'
+Before:
+using Microsoft.Maui.Controls;
+using System;
+using System.Collections.Generic;
+After:
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-maccatalyst)'
+Before:
+using Microsoft.Maui.Controls;
+using System;
+using System.Collections.Generic;
+After:
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-windows10.0.19041.0)'
+Before:
 using Newtonsoft.Json;
+After:
+using System.Threading.Tasks;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-android)'
+Before:
+using Newtonsoft.Json;
+After:
+using System.Threading.Tasks;
+*/
+
+/* Unmerged change from project 'ObligatorioTTec (net8.0-maccatalyst)'
+Before:
+using Newtonsoft.Json;
+After:
+using System.Threading.Tasks;
+*/
 namespace ObligatorioTTec.Models
 {
     public class MovieService
@@ -68,7 +163,7 @@ namespace ObligatorioTTec.Models
             }
         }
 
-        public async Task<List<Actor>> GetActors(long id,string type)
+        public async Task<List<Actor>> GetActors(long id, string type)
         {
             var request = new RestRequest($"/3/{type}/{id}/credits", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -88,7 +183,7 @@ namespace ObligatorioTTec.Models
                 throw new Exception($"Error retrieving data Actores: {response.ErrorMessage}");
             }
         }
-        public async Task<List<CrewMember>> GetDirectors(long id,string type)
+        public async Task<List<CrewMember>> GetDirectors(long id, string type)
         {
             var request = new RestRequest($"/3/{type}/{id}/credits", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -139,7 +234,7 @@ namespace ObligatorioTTec.Models
                 throw new Exception($"Failed load search: {response.ErrorMessage}");
             }
         }
-        public async Task<string> GetMoviesByActorId(long actorId,string type)
+        public async Task<string> GetMoviesByActorId(long actorId, string type)
         {
             var request = new RestRequest($"/3/person/{actorId}/{type}_credits", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -209,7 +304,7 @@ namespace ObligatorioTTec.Models
                 throw new Exception($"Failed load seasons: {response.ErrorMessage}");
             }
         }
-        public async Task<Episode> GetEpisodeDetails(long serie, long season,long episode)
+        public async Task<Episode> GetEpisodeDetails(long serie, long season, long episode)
         {
             var request = new RestRequest($"/3/tv/{serie}/season/{season}/episode/{episode}", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -227,7 +322,7 @@ namespace ObligatorioTTec.Models
             }
         }
 
-        public async Task<string> GetListByGenre(int genreId,string type)
+        public async Task<string> GetListByGenre(int genreId, string type)
         {
             var request = new RestRequest($"/3/discover/{type}?with_genres={genreId}", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -245,7 +340,7 @@ namespace ObligatorioTTec.Models
             }
         }
 
-        public async Task<string> GetList(string type,string category)
+        public async Task<string> GetList(string type, string category)
         {
             var request = new RestRequest($"/3/{type}/{category}", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -263,7 +358,7 @@ namespace ObligatorioTTec.Models
             }
         }
 
-        public async Task<MovieVideo> GetTrailer(long id,string type)
+        public async Task<MovieVideo> GetTrailer(long id, string type)
         {
             var request = new RestRequest($"/3/{type}/{id}/videos", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");
@@ -302,7 +397,7 @@ namespace ObligatorioTTec.Models
             public string Type { get; set; }
         }
 
-        public async Task<List<WatchProvider>> GetProviders(long id,string type)
+        public async Task<List<WatchProvider>> GetProviders(long id, string type)
         {
             var request = new RestRequest($"/3/{type}/{id}/watch/providers", Method.Get);
             request.AddHeader("Authorization", $"Bearer {ApiKey}");

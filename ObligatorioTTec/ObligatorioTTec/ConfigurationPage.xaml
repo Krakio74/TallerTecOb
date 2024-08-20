@@ -46,38 +46,37 @@
                Margin="0,20,0,0" />
 
         <CollectionView x:Name="ThemeCollectionView"
-                        ItemsLayout="HorizontalGrid"
-                        SelectionMode="Single"
-                        SelectionChanged="OnThemeSelected"
-                        >
+           ItemsLayout="HorizontalGrid"
+           SelectionMode="Single"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           SelectionChanged="OnThemeSelected">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame BorderColor="Gray"
-                           CornerRadius="10"
-                           HasShadow="True"
-                           Padding="10"
-                           Margin="5">
-                        <StackLayout>
-
+              CornerRadius="10"
+              HasShadow="True"
+              Padding="10"
+              Margin="5">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                             <Image Source="{Binding ThemeImage}" 
-        WidthRequest="100"
- HeightRequest="100"
-       Aspect="AspectFill"
->
+                      WidthRequest="100"
+                      HeightRequest="100"
+                      Aspect="AspectFill">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="OnThemeTapped"/>
                                 </Image.GestureRecognizers>
                             </Image>
-
                             <Label Text="{Binding ThemeName}"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center"
-                                   FontSize="18"
-                                   Margin="0,10,0,0" />
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      FontSize="18"
+                      Margin="0,10,0,0" />
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
     </StackLayout>
 </ContentPage>

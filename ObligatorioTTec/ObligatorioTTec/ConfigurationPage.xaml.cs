@@ -44,11 +44,10 @@ public partial class ConfigurationPage : ContentPage
     private void LoadThemes()
     {
         _themes = new List<ThemeItem>
-            {
-                new ThemeItem { ThemeName = "Light", ThemeImage = "dotnet_bot.png" },
-                new ThemeItem { ThemeName = "Dark", ThemeImage = "dotnet_bot.png" },
-                new ThemeItem { ThemeName = "Blue", ThemeImage = "dotnet_bot.png" }
-            };
+         {
+             new ThemeItem { ThemeName = "Light", ThemeImage = "light.png" },
+             new ThemeItem { ThemeName = "Dark", ThemeImage = "dark.png" },
+         };
 
         ThemeCollectionView.ItemsSource = _themes;
 

@@ -18,7 +18,7 @@ namespace ObligatorioTTec
             var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CineDBL.db3");
             builder.Services.AddSingleton<DBL>(s => ActivatorUtilities.CreateInstance<DBL>(s, dbPath));
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

@@ -87,7 +87,7 @@ public partial class SerieDetailsPage : ContentPage
     {
         try
         {
-            var providers = await _movieService.GetProviders(id,"tv");
+            var providers = await _movieService.GetProviders(id, "tv");
             ProvidersCollectionView.ItemsSource = providers;
         }
         catch (Exception ex)
@@ -126,9 +126,9 @@ public partial class SerieDetailsPage : ContentPage
     {
         try
         {
-            var pelicula = (Movie)BindingContext;
-            var movieId = pelicula.Id;
-            var trailer = await _movieService.GetTrailer(movieId,"tv");
+            var serie = (Serie)BindingContext;
+            var serieId = serie.Id;
+            var trailer = await _movieService.GetTrailer(serieId, "tv");
 
             if (trailer != null)
             {
